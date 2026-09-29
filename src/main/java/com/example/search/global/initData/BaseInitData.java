@@ -1,6 +1,6 @@
-package com.example.search.global;
+package com.example.search.global.initData;
 
-import com.example.search.domain.post.service.PostService;
+import com.example.search.domain.post.post.service.PostService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationRunner;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @Slf4j
 @RequiredArgsConstructor
-public class InitData {
+public class BaseInitData {
 
     private final PostService postService;
 

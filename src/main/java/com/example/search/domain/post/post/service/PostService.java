@@ -1,6 +1,6 @@
-package com.example.search.domain.post.service;
+package com.example.search.domain.post.post.service;
 
-import com.example.search.domain.post.repository.PostRepository;
+import com.example.search.domain.post.post.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

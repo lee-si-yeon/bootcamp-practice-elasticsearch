@@ -1,5 +1,5 @@
 
-package com.example.search.domain.post.document;
+package com.example.search.domain.post.post.document;
 
 import org.springframework.data.annotation.*;
 import org.springframework.data.elasticsearch.annotations.DateFormat;
