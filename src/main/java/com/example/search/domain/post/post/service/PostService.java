@@ -4,10 +4,11 @@ import com.example.search.domain.post.post.document.Post;
 import com.example.search.domain.post.post.repository.PostRepository;
 import com.example.search.global.exception.NotFoundException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -26,6 +27,10 @@ public class PostService {
 
     public List<Post> findAll() {
         return postRepository.findAll();
+    }
+
+    public Page<Post> findAll(Pageable pageable){
+        return postRepository.findAll(pageable);
     }
 
     public Post findById(String id) {
