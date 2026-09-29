@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: search
+  profiles:
+    active: dev
+  output:
+    ansi:
+      enabled: ALWAYS
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+logging:
+  level:
+    com:
+      example:
+        search: debug
+server:
+  port: 8080
